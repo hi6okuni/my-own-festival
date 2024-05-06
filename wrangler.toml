@@ -1,0 +1,29 @@
+name = "my-own-festival"
+compatibility_date = "2023-12-01"
+compatibility_flags = [ "nodejs_compat" ]
+
+# [vars]
+# MY_VAR = "my-variable"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "hono-lucia-auth"
+database_id = "66014c7a-5a9b-468d-9991-6daac10e844d"
+
+# [ai]
+# binding = "AI"
+
+ # bunx wrangler d1 execute hono-lucia-auth --local --command "SELECT * FROM spotify_users LIMIT 100"

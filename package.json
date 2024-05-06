@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev": "wrangler dev src/index.tsx",
+    "deploy": "wrangler deploy --minify src/index.tsx"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.1",
+    "@lucia-auth/adapter-sqlite": "^3.0.1",
+    "arctic": "^1.8.0",
+    "hono": "^4.2.9",
+    "zod": "^3.23.5"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.2",
+    "@cloudflare/workers-types": "^4.20240403.0",
+    "@types/bun": "^1.1.1",
+    "wrangler": "^3.47.0"
+  }
+}
