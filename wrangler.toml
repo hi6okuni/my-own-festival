@@ -1,5 +1,5 @@
 name = "my-own-festival"
-main = "src/index.ts"
+main = "src/index.tsx"
 compatibility_date = "2023-12-01"
 compatibility_flags = [ "nodejs_compat" ]
 
@@ -13,11 +13,6 @@ compatibility_flags = [ "nodejs_compat" ]
 # [[r2_buckets]]
 # binding = "MY_BUCKET"
 # bucket_name = "my-bucket"
-
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "my-database"
-# database_id = ""
 
 [[d1_databases]]
 binding = "DB" # i.e. available in your Worker on env.DB
